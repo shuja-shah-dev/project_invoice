@@ -6,7 +6,7 @@
 
 {# You can override the following variables in your own template to customize the template: #}
 {# set logo url #}
-{% set defaultLogoUrl = 'https://i.ibb.co/pR8ZzwK/xis.png' %}
+{% set defaultLogoUrl = 'https://i.ibb.co/JmZRkwq/Asset-7.png' %}
 {% set logoUrl = logoUrl|default(defaultLogoUrl) %}
 {# set color for header background, table header color and footer separator line #}
 {% set accentColor = accentColor|default('#708090') %}
@@ -57,7 +57,7 @@
                 height: 22mm;
                 padding-top: 5mm;
                 font-weight: bold;
-                background: {{ accentColor }};
+                background: #fff;
                 border: none;
             }
 
@@ -78,6 +78,7 @@
                 padding-right: 19mm;
                 height: 19mm;
                 color: #fff;
+                display:none;
             }
 
             .invoice-address {
@@ -191,6 +192,18 @@
                 top: 50%;
                 width: 10mm;
                 border-bottom: 2px solid #cccccc;
+            }
+
+            .newAddidition {
+                margin: 0 0;
+                list-style:none;
+            }
+
+            .newAddidition > li {
+                list-style: none;
+                font-size: 8pt;
+                text-align: left;
+                margin: .2rem 0;
             }
         </style>
     {% endblock %}
