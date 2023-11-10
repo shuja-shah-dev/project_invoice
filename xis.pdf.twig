@@ -166,6 +166,7 @@
                 display:flex;
                 align-items: center;
                 justify-content: space-between;
+                width: 100%;
             }
 
             .footer td {
@@ -260,13 +261,11 @@
                 <li>
                     {{ model.template.paymentDetails|nl2br }}
                 </li>
-        <li>
-            USt-IdNr: DE32604920
-        </li>
-                {% endblock %}
+                <li>
+                    USt-IdNr: DE32604920
+                </li>
             </ul>
-
-    <ul class="newAddidition">
+            <ul class="newAddidition">
            
         <li>
             Bankverbindung : DE18 6049 1430 0468 9360 09, GENODES1VBB, VR-BANK LUDWIGSBURG
@@ -287,6 +286,10 @@
         </li>
     
     </ul>
+    {% endblock %}
+          
+
+    
 
         {% block footer_page_numbers %}
         <p class="text-right text-small">{{ 'export.page_of'|trans({'%page%': '{PAGENO}', '%pages%': '{nb}'}) }}</p>
