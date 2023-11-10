@@ -265,6 +265,7 @@
 </htmlpageheader>
 <htmlpagefooter name="footer">
     {% block footer %}
+    <div class="footer">
         <ul class="newAddidition">
             {% block footer_address %}
             {% endblock %}
@@ -298,6 +299,7 @@
                 Geschäftsführer: Muti Ur Rehmann und Uwe Hartnagel
             </li>
         </ul>
+    </div>
         {% endblock %}
         {% block footer_page_numbers %}
         <p class="text-right text-small">{{ 'export.page_of'|trans({'%page%': '{PAGENO}', '%pages%': '{nb}'}) }}</p>
